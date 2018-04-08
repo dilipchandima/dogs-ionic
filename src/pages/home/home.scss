@@ -1,3 +1,25 @@
-page-home {
-
+// page-home {
+.breed{
+    width: 100%;
+    padding: 16px;
+    border-bottom: 1px solid blanchedalmond;
 }
+.search-input{
+    height: 50px;
+    padding: 16px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+.search-btn{
+    height: 50px;
+    padding: 10px;
+    background: #22A7F0;
+        color: #003171;
+        text-align: center;
+        font-size: 25px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 20%;
+}
+// }

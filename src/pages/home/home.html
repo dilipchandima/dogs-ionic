@@ -1,14 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Dog Breeds
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-row style="width:100%">
+    <input class="search-input" [(ngModel)]="_searchInput" type="text"/>
+    <button class="search-btn" (click)="search()"> <ion-icon name="search"></ion-icon></button>
+  </ion-row>
+  <ion-row>
+    <div *ngFor="let breed of _searchBreeds" class="breed" (click)="goToSubBreeds(breed)">{{breed}}</div>
+  </ion-row>
 </ion-content>
